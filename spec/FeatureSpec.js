@@ -26,7 +26,18 @@ describe('Feature Test:', function() {
 
   it('planes can be instructed to take off', function(){
     plane.land(airport);
-    plane.takeoff();
+    plane.takeoff(airport);
     expect(airport.planes).not.toContain(plane);
+  });
+
+//   As an air traffic controller
+// To ensure safety
+// I want to prevent takeoff when weather is stormy
+
+  it('prevents planes from takeoff when weather is stormy', function(){
+    plane.land(airport)
+    spyOn(airport,'isStormy').and.returnValue(true);
+    expect(function(){ plane.takeoff(airport);}).toThrowError('cannot takeoff during storm');
+    expect(airport.planes()).toContain(plane);
   });
 });
