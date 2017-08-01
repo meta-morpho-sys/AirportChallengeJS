@@ -24,4 +24,7 @@ In normal JavaScript, a developer will not receive any error feedback assigning 
 
 In strict mode, any assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object, will throw an error.
 
-## Watch out for ; , spaces {}
+### Watch out for
+```
+ ;  ,  spaces  {}  clearForTakeOff and clearForTakeoff (spot the difference, if you can!)
+```
