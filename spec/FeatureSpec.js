@@ -46,7 +46,6 @@ describe('Feature Test:', function() {
 // I want to prevent landing when weather is stormy
 
   it('prevents planes from landing when weather is stormy', function(){
-    plane.takeoff(airport)
     spyOn(airport,'isStormy').and.returnValue(true);
     expect(function(){ plane.land(airport);}).toThrowError('cannot land during storm');
     expect(airport.planes()).not.toContain(plane);
