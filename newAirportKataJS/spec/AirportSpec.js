@@ -28,6 +28,15 @@ describe('Airport', function() {
            airport.land(plane);
            expect(airport.landedPlanes).toContain(plane, plane);
            expect(airport.currentCapacity).toEqual(31)
+       });
+
+       it('throws an error when its full', function(){
+          var cap = Airport.INITIAL_CAPACITY;
+          for(var i = 0; i < cap; i++) {
+              console.log('I am landing a plane n ' + i);
+              airport.land(plane);
+          }
+          expect(function(){ airport.land(plane); }).toThrowError('airport filled to capacity');
        })
    });
 });

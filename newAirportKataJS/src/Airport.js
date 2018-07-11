@@ -10,12 +10,19 @@ function Airport() {
 }
 
 Airport.prototype.land = function(plane) {
+    this._isFull();
     this.plane = plane;
     this.landedPlanes.push(plane);
-    this._calculateCapacity();
+    this.decreaseCapacity();
     return this.plane.landAtAirport();
 };
 
-Airport.prototype._calculateCapacity = function(){
+Airport.prototype.decreaseCapacity = function(){
     this.currentCapacity -= 1;
+};
+
+Airport.prototype._isFull = function() {
+    if (this.currentCapacity === 0){
+        throw new Error('airport filled to capacity')
+    }
 };
