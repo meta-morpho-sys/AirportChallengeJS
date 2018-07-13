@@ -13,12 +13,12 @@ Airport.prototype.land = function(plane) {
     this._isFull();
     this.plane = plane;
     this.landedPlanes.push(plane);
-    this.decreaseCapacity();
+    this.decreaseAvailability();
     this.monitorHangarAndCapacity();
     return this.plane.landAtAirport();
 };
 
-Airport.prototype.decreaseCapacity = function(){
+Airport.prototype.decreaseAvailability = function(){
     this.currentCapacity -= 1;
 };
 
