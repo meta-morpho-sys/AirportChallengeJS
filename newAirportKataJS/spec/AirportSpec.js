@@ -23,7 +23,7 @@ describe('Airport', function() {
            expect(airport.landedPlanes).toContain(plane);
        });
 
-       it('- the capacity decreases with each landed plane', function(){
+       it('- the availability decreases with each landed plane', function(){
            airport.land(plane);
            airport.land(plane);
            expect(airport.landedPlanes).toContain(plane, plane);
@@ -42,6 +42,7 @@ describe('Airport', function() {
 
    describe('gives permission to take off', function(){
        it('- plane takes off successfully',function() {
+           console.log('take off test', airport.landedPlanes);
            airport.land(plane);
            airport.land(plane);
            spyOn(plane, 'takeOff').and.returnValue(false);
@@ -49,5 +50,21 @@ describe('Airport', function() {
            expect(plane.takeOff).toHaveBeenCalled();
        });
 
-   })
+       it("- plane's removed from the list of landed planes", function(){
+           airport.land(plane);
+           airport.takeOffOk(plane);
+           expect(airport.landedPlanes).not.toContain(plane);
+           expect(airport.landedPlanes).toEqual([]);
+       });
+
+       it('- the availability grows', function(){
+           console.log('line 64 take off test', airport.landedPlanes);
+           airport.land(plane);
+           airport.land(plane);
+           airport.takeOffOk(plane);
+           expect(airport.landedPlanes).toContain(plane);
+           expect(airport.currentCapacity).toEqual(32)
+       });
+   });
+
 });

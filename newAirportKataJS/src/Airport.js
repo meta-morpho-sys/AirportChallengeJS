@@ -13,22 +13,23 @@ Airport.prototype.land = function(plane) {
     this._isFull();
     this.plane = plane;
     this.landedPlanes.push(plane);
-    this.decreaseAvailability();
-    this.monitorHangarAndCapacity();
+    this.updateAvailability(1);
+    this._hangarAndCapacityInfo();
     return this.plane.landAtAirport();
 };
 
-Airport.prototype.decreaseAvailability = function(){
-    this.currentCapacity -= 1;
+Airport.prototype.updateAvailability = function(num){
+    this.currentCapacity -= num;
 };
 
 Airport.prototype.takeOffOk = function(plane) {
-    console.log('Planes in hangar before take off ', this.landedPlanes.length );
-    var blah = this.landedPlanes.pop();
-    return blah.takeOff();
+    var leavingPlane = this.landedPlanes.pop();
+    this.updateAvailability(-1);
+    this._hangarAndCapacityInfo();
+    return leavingPlane.takeOff();
 };
 
-Airport.prototype.monitorHangarAndCapacity = function(){
+Airport.prototype._hangarAndCapacityInfo = function(){
     console.log('Planes in hangar ', this.landedPlanes.length);
     console.log('Current capacity ',this.currentCapacity);
 };
