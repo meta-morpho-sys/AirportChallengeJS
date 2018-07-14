@@ -6,10 +6,9 @@ function Airport(customCapacity) {
 
 Airport.prototype.land = function(plane) {
     this._isFull();
-    this.plane = plane;
     this.landedPlanes.push(plane);
     this.availabilityManagement(1);
-    return this.plane.landAtAirport();
+    return plane.landAtAirport();
 };
 
 Airport.prototype.updateAvailability = function(num){
