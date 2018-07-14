@@ -1,14 +1,12 @@
 describe('Airport', function() {
-   var airport;
-   var plane;
+   var airport; var plane;
+   beforeEach(function() {airport = new Airport(); plane = new Plane(); });
 
-   beforeEach(function(){
-       airport = new Airport();
-       plane = new Plane();
-   });
+   it('has an default capacity', function() {expect(Airport.CAPACITY).toEqual(33)});
 
-   it('has an initial capacity', function(){
-       expect(Airport.INITIAL_CAPACITY).toEqual(33)
+   it('accepts custom capacity on initiation', function () {
+       var airport2 = new Airport(100);
+       expect(airport2.capacity).toEqual(100)
    });
 
    describe('gives permission to land', function(){
@@ -24,47 +22,36 @@ describe('Airport', function() {
        });
 
        it('- the availability decreases with each landed plane', function(){
-           airport.land(plane);
-           airport.land(plane);
+           airport.land(plane); airport.land(plane);
            expect(airport.landedPlanes).toContain(plane, plane);
-           expect(airport.currentCapacity).toEqual(31)
+           expect(airport.capacity).toEqual(31)
        });
 
        it('- error is thrown when its full', function(){
-          var cap = Airport.INITIAL_CAPACITY;
-          for(var i = 0; i < cap; i++) {
-              console.log('I am landing a plane n ' + i);
-              airport.land(plane);
-          }
+          var cap = Airport.CAPACITY;
+          for(var i = 0; i < cap; i++) {airport.land(plane);}
           expect(function(){ airport.land(plane); }).toThrowError('airport filled to capacity');
        })
    });
 
    describe('gives permission to take off', function(){
+       beforeEach(function() {airport.land(plane); airport.land(plane);});
+
        it('- plane takes off successfully',function() {
-           console.log('take off test', airport.landedPlanes);
-           airport.land(plane);
-           airport.land(plane);
            spyOn(plane, 'takeOff').and.returnValue(false);
            expect(airport.takeOffOk(plane)).toEqual(false);
            expect(plane.takeOff).toHaveBeenCalled();
        });
 
        it("- plane's removed from the list of landed planes", function(){
-           airport.land(plane);
            airport.takeOffOk(plane);
-           expect(airport.landedPlanes).not.toContain(plane);
-           expect(airport.landedPlanes).toEqual([]);
+           expect(airport.landedPlanes).toContain(plane, plane);
        });
 
        it('- the availability grows', function(){
-           console.log('line 64 take off test', airport.landedPlanes);
-           airport.land(plane);
-           airport.land(plane);
            airport.takeOffOk(plane);
            expect(airport.landedPlanes).toContain(plane);
-           expect(airport.currentCapacity).toEqual(32)
+           expect(airport.capacity).toEqual(32)
        });
    });
-
 });
