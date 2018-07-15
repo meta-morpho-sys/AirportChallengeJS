@@ -5,34 +5,24 @@ function Airport(customCapacity) {
 }
 
 Airport.prototype.land = function(plane) {
-    this._isFull();
+    if (this._isFull()) {
+        throw new Error('airport filled to capacity');
+    }
     this.landedPlanes.push(plane);
-    this.availabilityManagement(1);
+    this.updateAvailability();
     return plane.landAtAirport();
 };
 
-Airport.prototype.updateAvailability = function(num){
-    this.capacity -= num;
+Airport.prototype.updateAvailability = function(){
+    return this.capacity - this.landedPlanes.length;
 };
 
 Airport.prototype.takeOffOk = function(plane) {
     var leavingPlane = this.landedPlanes.pop();
-    this.availabilityManagement(-1);
+    this.updateAvailability();
     return leavingPlane.takeOff();
 };
 
-Airport.prototype.availabilityManagement = function (num) {
-    this.updateAvailability(num);
-    this._hangarAndCapacityInfo();
-};
-
-Airport.prototype._hangarAndCapacityInfo = function(){
-    console.log('Planes in hangar ', this.landedPlanes.length);
-    console.log('Current capacity ',this.capacity);
-};
-
 Airport.prototype._isFull = function() {
-    if (this.capacity === 0){
-        throw new Error('airport filled to capacity')
-    }
+    return this.updateAvailability() === 0;
 };
