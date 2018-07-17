@@ -1,8 +1,10 @@
+'use strict';
+
 describe('Airport', function() {
    var airport; var plane;
    beforeEach(function() {airport = new Airport(); plane = new Plane(); });
 
-   it('has an default capacity', function() {expect(Airport.CAPACITY).toEqual(33)});
+   it('has an default capacity', function() {expect(airport.CAPACITY).toEqual(33)});
    it('accepts custom capacity on initiation', function () {
        var airport2 = new Airport(100);
        expect(airport2.capacity).toEqual(100)
@@ -21,13 +23,8 @@ describe('Airport', function() {
        it('- the availability decreases with each landed plane', function(){
            airport.land(plane); airport.land(plane);
            expect(airport.landedPlanes).toContain(plane, plane);
-           expect(airport.updateAvailability()).toEqual(31)
+           expect(airport.availability).toEqual(31)
        });
-       it('- error is thrown when its full', function(){
-          var cap = airport.capacity;
-          for(var i = 0; i < cap; i++) {airport.land(plane);}
-          expect(function(){ airport.land(plane); }).toThrowError('airport filled to capacity');
-       })
    });
 
    describe('gives permission to take off', function(){
@@ -45,7 +42,16 @@ describe('Airport', function() {
        it('- the availability grows', function(){
            airport.takeOffOk(plane);
            expect(airport.landedPlanes).toContain(plane);
-           expect(airport.updateAvailability()).toEqual(32)
+           expect(airport.availability).toEqual(32)
        });
    });
+
+   describe("doesn't give permission to land", function() {
+
+       it("- when it's full", function(){
+           var cap = airport.capacity;
+           for(var i = 0; i < cap; i++) {airport.land(plane);}
+           expect(function(){ airport.land(plane); }).toThrowError('airport filled to capacity');
+       });
+   })
 });

@@ -1,7 +1,12 @@
+'use strict';
+
 function Airport(customCapacity) {
-    Object.defineProperty(Airport, 'CAPACITY', {value: 33});
     this.landedPlanes = [];
-    this.capacity = customCapacity || Airport.CAPACITY;
+    Object.defineProperty(Airport.prototype,
+        'CAPACITY', {
+            value: 33
+        });
+    this.capacity = customCapacity || this.CAPACITY;
 }
 
 Airport.prototype.land = function(plane) {
@@ -9,20 +14,17 @@ Airport.prototype.land = function(plane) {
         throw new Error('airport filled to capacity');
     }
     this.landedPlanes.push(plane);
-    this.updateAvailability();
+    this.availability = this.capacity - this.landedPlanes.length;
     return plane.landAtAirport();
-};
-
-Airport.prototype.updateAvailability = function(){
-    return this.capacity - this.landedPlanes.length;
 };
 
 Airport.prototype.takeOffOk = function(plane) {
     var leavingPlane = this.landedPlanes.pop();
-    this.updateAvailability();
+    console.log(this.availability);
+    this.availability = this.capacity - this.landedPlanes.length;
     return leavingPlane.takeOff();
 };
 
 Airport.prototype._isFull = function() {
-    return this.updateAvailability() === 0;
+    return this.availability === 0;
 };
