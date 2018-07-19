@@ -1,7 +1,7 @@
 'use strict';
 
 function Airport(weather){
-  this._weather = typeof weather !== 'undefined' ? weather : new Weather()
+  this._weather = typeof weather !== 'undefined' ? weather : new Weather();
   this._hangar = [];
 }
 

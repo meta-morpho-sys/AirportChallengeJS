@@ -3,14 +3,10 @@
   <component name="ChangeListManager">
     <list id="cbbcf21a-600b-4cdb-9268-cb730f95264b" name="One more exercise." comment="wrong wording of the unit test" />
     <list default="true" id="55e902ab-a0fe-4339-84e8-d32e984c8c49" name="Default" comment="One more exercise.">
-      <change beforePath="" afterPath="$PROJECT_DIR$/newAirportKataJS/spec/WeatherSpec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/newAirportKataJS/src/Weather.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/newAirportKataJS/SpecRunner.html" afterPath="$PROJECT_DIR$/newAirportKataJS/SpecRunner.html" />
       <change beforePath="$PROJECT_DIR$/newAirportKataJS/jasmine-standalone-3.1.0.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/newAirportKataJS/spec/AirportSpec.js" afterPath="$PROJECT_DIR$/newAirportKataJS/spec/AirportSpec.js" />
-      <change beforePath="$PROJECT_DIR$/newAirportKataJS/src/Airport.js" afterPath="$PROJECT_DIR$/newAirportKataJS/src/Airport.js" />
+      <change beforePath="$PROJECT_DIR$/oldAirportKataJS/spec/AirportSpec.js" afterPath="$PROJECT_DIR$/oldAirportKataJS/spec/AirportSpec.js" />
+      <change beforePath="$PROJECT_DIR$/oldAirportKataJS/src/Airport.js" afterPath="$PROJECT_DIR$/oldAirportKataJS/src/Airport.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,31 +17,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WeatherSpec.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/newAirportKataJS/spec/WeatherSpec.js">
+      <file leaf-file-name="AirportSpec.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newAirportKataJS/spec/AirportSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            <state relative-caret-position="270">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding>
+                <element signature="e#254#371#0" expanded="false" />
+                <element signature="e#521#613#0" expanded="false" />
+                <element signature="e#667#1448#0" expanded="false" />
+                <element signature="e#1506#2305#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Airport.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/newAirportKataJS/src/Airport.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="51" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Weather.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Weather.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newAirportKataJS/src/Weather.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AirportSpec.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oldAirportKataJS/spec/AirportSpec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="37" column="101" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="101" />
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -64,6 +65,7 @@
     <findStrings>
       <find>availabilityM</find>
       <find>rand</find>
+      <find>weather</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -74,13 +76,18 @@
       <list>
         <option value="$PROJECT_DIR$/spec/FeatureSpec.js" />
         <option value="$PROJECT_DIR$/oldAirport/SpecRunner.html" />
-        <option value="$PROJECT_DIR$/newAirportKataJS/src/Airport.js" />
-        <option value="$PROJECT_DIR$/newAirportKataJS/spec/AirportSpec.js" />
         <option value="$PROJECT_DIR$/newAirportKataJS/src/WeatherSpec.js" />
         <option value="$PROJECT_DIR$/newAirportKataJS/src/bla.js" />
         <option value="$PROJECT_DIR$/newAirportKataJS/SpecRunner.html" />
         <option value="$PROJECT_DIR$/newAirportKataJS/spec/WeatherSpec.js" />
         <option value="$PROJECT_DIR$/newAirportKataJS/src/Weather.js" />
+        <option value="$PROJECT_DIR$/newAirportKataJS/src/Plane.js" />
+        <option value="$PROJECT_DIR$/newAirportKataJS/spec/PlaneSpec.js" />
+        <option value="$PROJECT_DIR$/newAirportKataJS/spec/SpecHelper.js" />
+        <option value="$PROJECT_DIR$/oldAirportKataJS/src/Airport.js" />
+        <option value="$PROJECT_DIR$/oldAirportKataJS/spec/AirportSpec.js" />
+        <option value="$PROJECT_DIR$/newAirportKataJS/src/Airport.js" />
+        <option value="$PROJECT_DIR$/newAirportKataJS/spec/AirportSpec.js" />
       </list>
     </option>
   </component>
@@ -178,6 +185,19 @@
               <item name="AirportChallengeJS" type="b2602c69:ProjectViewProjectNode" />
               <item name="AirportChallengeJS" type="462c0819:PsiDirectoryNode" />
               <item name="newAirportKataJS" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AirportChallengeJS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AirportChallengeJS" type="462c0819:PsiDirectoryNode" />
+              <item name="newAirportKataJS" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="jasmine-3.1.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AirportChallengeJS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AirportChallengeJS" type="462c0819:PsiDirectoryNode" />
+              <item name="newAirportKataJS" type="462c0819:PsiDirectoryNode" />
               <item name="spec" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -210,9 +230,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JSON" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="js.last.introduce.type" value="VAR" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -387,7 +408,7 @@
       <workItem from="1501677615456" duration="65000" />
       <workItem from="1506369519698" duration="102000" />
       <workItem from="1531257011830" duration="7927000" />
-      <workItem from="1531325571171" duration="26382000" />
+      <workItem from="1531325571171" duration="68667000" />
     </task>
     <task id="LOCAL-00001" summary="One more exercise.">
       <created>1531294428433</created>
@@ -473,11 +494,46 @@
       <option name="project" value="LOCAL" />
       <updated>1531579165380</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="New feature - Weather">
+      <created>1531671904366</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1531671904366</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Refactoring after code review - point 3">
+      <created>1531672003237</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1531672003237</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Using instance variable for availability.">
+      <created>1531862474790</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1531862474790</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Strict mode">
+      <created>1531862728687</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1531862728687</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Some refactoring and corrected bad tests">
+      <created>1532003104124</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1532003104124</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34476000" />
+    <option name="totallyTimeSpent" value="76761000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="878" extended-state="6" />
@@ -488,7 +544,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32822478" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822478" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1423462" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1416309" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822478" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -567,11 +623,16 @@
     <MESSAGE value="Refactoring after code review" />
     <MESSAGE value="Refactoring after code review - point 4" />
     <MESSAGE value="Refactoring after code review - point 4 of the review" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring after code review - point 4 of the review" />
+    <MESSAGE value="New feature - Weather" />
+    <MESSAGE value="Refactoring after code review - point 3" />
+    <MESSAGE value="Using instance variable for availability." />
+    <MESSAGE value="Strict mode" />
+    <MESSAGE value="Some refactoring and corrected bad tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some refactoring and corrected bad tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -580,7 +641,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#254#371#0" expanded="false" />
+            <element signature="e#521#613#0" expanded="false" />
+            <element signature="e#667#1448#0" expanded="false" />
+            <element signature="e#1506#2305#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -756,100 +822,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newAirportKataJS/src/Player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newAirportKataJS/spec/PlayerSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newAirportKataJS/lib/jasmine-3.1.0/jasmine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="5610" column="4" lean-forward="false" selection-start-line="5610" selection-start-column="4" selection-end-line="5610" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oldAirportKataJS/src/Plane.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <marker date="1501681270000" expanded="true" signature="219:223" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newAirportKataJS/src/Plane.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oldAirportKataJS/src/Airport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newAirportKataJS/src/Airport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newAirportKataJS/spec/SpecHelper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/newAirportKataJS/src/bla.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newAirportKataJS/SpecRunner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newAirportKataJS/spec/AirportSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="44" column="32" lean-forward="false" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oldAirportKataJS/src/Weather.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -862,11 +838,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oldAirportKataJS/SpecRunner.html">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="1101" column="4" lean-forward="false" selection-start-line="1101" selection-start-column="4" selection-end-line="1101" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newAirportKataJS/spec/PlaneSpec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newAirportKataJS/spec/SpecHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newAirportKataJS/spec/PlayerSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newAirportKataJS/src/Player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newAirportKataJS/src/Plane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oldAirportKataJS/src/Plane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13" />
+          <folding>
+            <marker date="1501681270000" expanded="true" signature="219:223" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -878,10 +904,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/oldAirportKataJS/src/Weather.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newAirportKataJS/lib/jasmine-3.1.0/jasmine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="5232" column="2" lean-forward="false" selection-start-line="5232" selection-start-column="2" selection-end-line="5232" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newAirportKataJS/SpecRunner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oldAirportKataJS/SpecRunner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oldAirportKataJS/src/Airport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/oldAirportKataJS/spec/AirportSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="37" column="101" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="101" />
+        <state relative-caret-position="245">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="20" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -889,7 +955,28 @@
     <entry file="file://$PROJECT_DIR$/newAirportKataJS/src/Weather.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newAirportKataJS/spec/AirportSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="e#254#371#0" expanded="false" />
+            <element signature="e#521#613#0" expanded="false" />
+            <element signature="e#667#1448#0" expanded="false" />
+            <element signature="e#1506#2305#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newAirportKataJS/src/Airport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="51" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
