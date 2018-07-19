@@ -22,7 +22,6 @@ Airport.prototype.land = function(plane) {
         throw new Error('Stormy weather. Landing denied')
     }
     this.landedPlanes.push(plane);
-    // this.availability = this.capacity - this.landedPlanes.length;
     return plane.landAtAirport();
 };
 
@@ -31,7 +30,6 @@ Airport.prototype.takeOffOk = function(plane) {
         throw new Error('Stormy weather. Take-off denied')
     }
     var leavingPlane = this.landedPlanes.pop();
-    // this.availability = this.capacity - this.landedPlanes.length;
     return leavingPlane.takeOff();
 };
 
